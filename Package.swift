@@ -7,11 +7,10 @@ let package = Package(
     name: "Fuji",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(name: "Fuji", targets: ["Fuji"]),
         .library(name: "SportsThemeFoundation", targets: ["SportsThemeFoundation"]),
-        .library(name: "SportsTheme", targets: ["SportsTheme"]),
+        .library(name: "SportsUI", targets: ["SportsTheme"]),
         .library(name: "ArtsThemeFoundation", targets: ["ArtsThemeFoundation"]),
-        .library(name: "ArtsTheme", targets: ["ArtsTheme"])
+        .library(name: "ArtsUI", targets: ["ArtsTheme"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
