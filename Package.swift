@@ -7,12 +7,11 @@ let package = Package(
     name: "Fuji",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(name: "Fuji", type: .dynamic, targets: ["Fuji"]),
-        .library(name: "FujiCoreVisual", type: .dynamic, targets: ["FujiCoreVisual"]),
-        .library(name: "SportsThemeFoundation", type: .dynamic, targets: ["SportsThemeFoundation"]),
-        .library(name: "SportsTheme", type: .dynamic, targets: ["SportsTheme"]),
-        .library(name: "ArtsThemeFoundation", type: .dynamic, targets: ["ArtsThemeFoundation"]),
-        .library(name: "ArtsTheme", type: .dynamic, targets: ["ArtsTheme"])
+        .library(name: "Fuji", targets: ["Fuji"]),
+        .library(name: "SportsThemeFoundation", targets: ["SportsThemeFoundation"]),
+        .library(name: "SportsTheme", targets: ["SportsTheme"]),
+        .library(name: "ArtsThemeFoundation", targets: ["ArtsThemeFoundation"]),
+        .library(name: "ArtsTheme", targets: ["ArtsTheme"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
